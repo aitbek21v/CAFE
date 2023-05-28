@@ -18,16 +18,12 @@ const Home = () => {
                     <div className="home--shift__delicuios">
                         <div className="home--shift__delicuios--lin">
                             <img src={img} alt=""/>
-                            <div className="home--shift__delicuios--lin__lin2">
 
-                            </div>
                         </div>
                         <h5>Delicious</h5>
                         <div className="home--shift__delicuios--lin">
                             <img src={img2} alt=""/>
-                            <div className="home--shift__delicuios--lin__lin2">
 
-                            </div>
                         </div>
                     </div>
                     <h1>Italian Cuisine</h1>
@@ -70,7 +66,7 @@ const Home = () => {
                                     <input type="text" placeholder="Enter your phone" />
                                 </div>
                             </div>
-                            <button>Contact</button>
+                            <button className='btnn'>Contact</button>
                         </div>
                     </div>
                 </div>
@@ -86,10 +82,10 @@ const Home = () => {
                     <div className="home--number__location">
                         <p>Hotline</p>
                         <div className="home--number__location--lin"></div>
-                        <a href="#">
+                        <a href="tel:+996557010998">
                             <BsFillTelephoneFill/>
                         </a>
-                        <p>+771219900</p>
+                        <a href="tel:+996557 010 998">0557010998</a>
                     </div>
                     <div className="modal" onClick={() => {
                         setModal(false)

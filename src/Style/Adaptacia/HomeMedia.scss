@@ -1,0 +1,143 @@
+@media (max-width: 1440px) {
+  #home .home {
+    padding-top: 100px;
+    position: relative;
+    min-height: 219vh;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.45);
+  }
+
+}
+@media (max-width: 1200px) {
+  #home .home {
+    padding-top: 100px;
+    position: relative;
+    min-height: 207vh;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.45);
+  }
+
+}
+@media (max-width: 1024px) {
+
+
+  #home .home--number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 73%;
+    position: absolute;
+    bottom: 50px;
+    left: 150px;
+    padding-top: 100px;
+  }
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+
+  #home .home--number__location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 567px) {
+
+  #home .home--number__location a {
+    color: red;
+    font-size: 17px;
+    margin: 0 15px;
+    display: none;
+  }
+  #home .home--number__location a {
+    color: red;
+    font-size: 17px;
+    margin: 0 15px;
+    display: none;
+  }
+  #home .home--number__location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #home .home--number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    position: absolute;
+    bottom: 50px;
+    left: 150px;
+    padding-top: 100px;
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  #home .home--shift h1 {
+    font-family: "Silk Serif";
+    font-weight: 600;
+    font-size: 38px;
+    color: #FFFFFF;
+    padding: 30px 0;
+  }
+
+
+  #home .home--shift p {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    padding-bottom: 50px;
+    color: #FFFFFF;
+  }
+  #home .home--number__location p {
+    font-weight: 600;
+    font-size: 9px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+
+}
+@media (max-width: 424px) {
+
+}
+@media (max-width: 380px) {
+  #home .home--number__location p {
+    font-weight: 600;
+    font-size: 9px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+  #home .home--number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    position: absolute;
+    bottom: 50px;
+    left: 115px;
+    padding-top: 100px;
+  }
+}
+@media (max-width: 320px) {
+  #home .home--number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    position: absolute;
+    bottom: 50px;
+    left: 87px;
+    padding-top: 100px;
+  }
+}
