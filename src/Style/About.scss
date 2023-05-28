@@ -1,0 +1,53 @@
+#about{
+  padding: 60px 0;
+  .about{
+    &--logo{
+      display: flex;
+      align-items: flex-start;
+      padding: 50px 0;
+      &__inner{
+        margin-top: 10px;
+        margin-right: 40px;
+        img{
+          width: 55px;
+        }
+        &--lin{
+          width: 51.26px;
+          border: 2px solid #EF272C;
+        }
+      }
+      h1{
+        font-family: 'Shalimar';
+        font-weight: 400;
+        font-size: 40px;
+        color: #FFFFFF;
+      }
+    }
+    &--flavors{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 0;
+      h1{
+        font-family: 'Silk Serif';
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 61px;
+        color: #FFFFFF;
+        background: black;
+      }
+      p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+
+      }
+    }
+    &--title{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

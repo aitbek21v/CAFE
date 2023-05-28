@@ -1,0 +1,56 @@
+@media (max-width: 1024px) {
+  #main {
+    .tab {
+      &--list {
+        margin: 0 37px 0 0;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 840px) {
+  #main {
+    .tab {
+      .card{
+
+        &--text{
+          h1{
+            font-size: 17px;
+          }
+        }
+      }
+      &--list {
+        &__link {
+          width: 278px;
+        }
+        &__liner{
+          width: 278px;
+          height: 1px;
+          background: rgb(93,93,105);
+          background: linear-gradient(90deg, rgba(93,93,105,0) 0%, rgba(255,255,255,1) 50%, rgba(31,39,49,1) 100%);
+
+        }
+      }
+      &--content{
+        display: none;
+      }
+
+    }
+  }
+}
+@media (max-width: 320px) {
+  #main{
+    .menu{
+    h1{
+      font-size: 20px;
+      width: 230px;
+    }
+  }
+    .tab{
+      .content{
+        display: none;
+      }
+    }
+  }
+}

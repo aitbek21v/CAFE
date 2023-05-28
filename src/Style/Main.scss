@@ -1,0 +1,215 @@
+#main {
+  padding: 50px 0;
+
+  .menu {
+    &--title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h4 {
+        color: white;
+        font-family: "Shalimar", sans-serif;
+        font-size: 30px;
+        margin: 0 20px;
+        font-weight: 200;
+      }
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-family: "Libre Baskerville", sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 55px;
+      width: 337px;
+    }
+  }
+
+  .tab {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+
+    &--list {
+      position: relative;
+
+      li {
+        display: flex;
+        align-items: center;
+
+      }
+
+      &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height: 65px;
+        color: white;
+        background: #1F2731;
+        border: none;
+        outline: none;
+        font-family: "Libre Baskerville", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        position: relative;
+        cursor: pointer;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 70%;
+          height: 1px;
+          background-color: #7e7d7d;
+        }
+      }
+
+      .line {
+        position: absolute;
+        right: -10px;
+        width: 50px;
+        height: 2px;
+        background: #FFFFFF;
+        transition: transform 0.3s ease-in-out;
+        transform-origin: right center;
+        transform: scaleX(0);
+      }
+
+      .activate {
+        transform: scaleX(1);
+        background: #FFFFFF;
+      }
+
+      .active {
+        background: #de080c;
+        transition: .3s ease-in-out;
+        padding: 10px 0;
+        &::after{
+          background-color: transparent;
+        }
+      }
+
+    }
+
+    .content{
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 0 20px;
+      &__wrapper {
+        margin-bottom: 10px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+        &__active {
+          max-height: 700px;
+          &__order{
+            h2{
+              color: red;
+            }
+          }
+        }
+      }
+    }
+
+
+
+
+
+    .card {
+      padding: 0 0 30px 0;
+      position: relative;
+      width: 100%;
+
+      &--text {
+        display: flex;
+
+        h5 {
+          width: 389px;
+          font-weight: 600;
+          font-size: 18px;
+          color: #FFFFFF;
+          opacity: 0.9;
+          margin: 0 10px 0 10px;
+        }
+
+        h1 {
+          font-family: 'Libre Baskerville', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          color: white;
+        }
+
+        h4 {
+          font-family: 'Libre Baskerville', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          color: #EF272C;
+        }
+      }
+       &--order{
+         display: flex;
+         justify-content: space-between;
+         p {
+           font-family: 'Spartan', sans-serif;
+           font-style: normal;
+           font-weight: 400;
+           font-size: 14px;
+           line-height: 20px;
+           color: #d2d2d2;
+           height: 40px;
+           width: 389px;
+
+         }
+         h3 {
+           padding: 40px 0 0 0;
+           font-family: 'Libre Baskerville', sans-serif;
+           font-style: normal;
+           font-weight: 300;
+           font-size: 12px;
+           color: #FFFFFF;
+            text-decoration-line: underline;
+         }
+       }
+
+
+    }
+  }
+  .kep{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &--lin{
+      width: 90.75px;
+      border: 2px solid #EF272C;
+
+      margin: 10px 0;
+    }
+    button{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      background: transparent;
+      padding: 13px 20px;
+      border: 2px solid red;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 13px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      .house{
+        margin: 0 0 0 10px;
+        font-size: 15px;
+      }
+
+    }
+  }
+}

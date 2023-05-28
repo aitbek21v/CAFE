@@ -1,0 +1,106 @@
+#desc{
+
+  .desc{
+
+    .modal{
+      &--button{
+        font-size: 25px;
+        color: #FFFFFF;
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        cursor: pointer;
+
+      }
+      &__content {
+        padding: 50px 0;
+        width: 110%;
+        height: 100%;
+        background:#1F2731;
+        display: flex;
+        flex-direction: column;
+        &__column{
+          display: flex;
+          flex-direction: column;
+          img{
+            width: 200px;
+          }
+          &__open{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 10px;
+            padding: 2px 0 2px 0;
+            &__name{
+              h1 {
+                font-family: 'Spartan', sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                color: #e5e5e5;
+              }
+
+              h4 {
+                font-weight: 500;
+                font-size: 14px;
+                letter-spacing: 0.07em;
+                color: #939393;
+              }
+
+
+            }
+            p{
+              font-family: 'Spartan',sans-serif;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              color: #EF272C;
+
+            }
+          }
+        }
+
+        &__actions{
+
+          &__price{
+            padding: 10px 20px;
+            &__cafe{
+              width: 262px;
+              h1{
+                font-family: 'Spartan', sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                color: #ffffff;
+                padding: 10px 0;
+              }
+              &__cherry{
+                display: flex;
+                justify-content: space-between;
+                p{
+                  font-family: 'Spartan';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: #939393;
+                  padding:  0 0 2px 0;
+                }
+              }
+              &__cola{
+                display: flex;
+                justify-content: space-between;
+                p{
+                  font-family: 'Spartan';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: #939393;
+                  padding:  0 0 2px 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

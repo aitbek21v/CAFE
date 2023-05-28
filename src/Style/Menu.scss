@@ -1,0 +1,245 @@
+#menu{
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 80%;
+    .search{
+      display: none;
+      width: 80%;
+    }
+    .ground{
+      width: 80%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+    }
+    &--list {
+
+      li {
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+
+      &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height: 65px;
+        color: white;
+        background: #1F2731;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        font-family: "Libre Baskerville", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 70%;
+          height: 1px;
+          background-color: #7e7d7d;
+        }
+
+      }
+      .active {
+        background: #de080c;
+        transition: .3s ease-in-out;
+        width: 350px;
+        z-index: 99;
+      }
+      .line {
+        position: absolute;
+        right: -10px;
+        width: 50px;
+        height: 2px;
+        background: #FFFFFF;
+        transition: transform 0.3s ease-in-out;
+        transform-origin: right center;
+        transform: scaleX(0);
+
+      }
+
+      .activate {
+        transform: scaleX(1);
+        background: #FFFFFF;
+      }
+
+
+
+
+    }
+    .desc{
+      display: none;
+    }
+    &--content {
+      margin: 0 0 0 50px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+
+       .ground{
+         width: 59%;
+         height: 200%;
+         background: rgba(255, 255, 255, 0);
+         position: absolute;
+         left: 40%;
+         top: 0;
+       }
+      .similar{
+        margin: 20px 150px 20px 0 ;
+        color: #fff;
+        font-family: "Libre Baskerville";
+        font-weight: 400;
+      }
+      .card {
+        background: #FFFFFF;
+
+        &--click{
+          cursor: pointer;
+          border: none;
+          outline: none;
+        }
+        &--text {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 0 10px;
+          padding: 2px 0 1px 0;
+          &__ice {
+            h1 {
+              font-family: 'Spartan', sans-serif;
+              font-weight: 600;
+              font-size: 16px;
+              color: #1F2731;
+            }
+
+            h4 {
+              font-weight: 500;
+              font-size: 14px;
+              letter-spacing: 0.07em;
+              color: #939393;
+            }
+          }
+          p{
+            font-family: 'Spartan',sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            color: #EF272C;
+
+          }
+
+        }
+      }
+    }
+
+    .modal{
+
+      &--button{
+        font-size: 35px;
+        color: #FFFFFF;
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        cursor: pointer;
+
+      }
+      &__content {
+        width: 640px;
+        height: 238px;
+        background:#1F2731;
+        display: flex;
+        &__column{
+          display: flex;
+          flex-direction: column;
+
+          &__open{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 10px;
+            padding: 2px 0 2px 0;
+            &__name{
+              h1 {
+                font-family: 'Spartan', sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                color: #e5e5e5;
+              }
+
+              h4 {
+                font-weight: 500;
+                font-size: 14px;
+                letter-spacing: 0.07em;
+                color: #939393;
+              }
+
+
+            }
+            p{
+              font-family: 'Spartan',sans-serif;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              color: #EF272C;
+
+            }
+          }
+        }
+
+        &__actions{
+
+          &__price{
+            padding: 10px 20px;
+            &__cafe{
+              width: 262px;
+              h1{
+                font-family: 'Spartan', sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                color: #ffffff;
+                padding: 10px 0;
+              }
+              &__cherry{
+                display: flex;
+                justify-content: space-between;
+                p{
+                  font-family: 'Spartan';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: #939393;
+                  padding:  0 0 2px 0;
+                }
+              }
+              &__cola{
+                display: flex;
+                justify-content: space-between;
+                p{
+                  font-family: 'Spartan';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: #939393;
+                  padding:  0 0 2px 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
