@@ -1,6 +1,10 @@
 @media (max-width: 1024px) {
   #main {
+.menu{
+  width: 120%;
+}
     .tab {
+
       &--list {
         margin: 0 37px 0 0;
       }
@@ -9,8 +13,11 @@
   }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 992px) {
   #main {
+    .menu{
+      width: 100%;
+    }
     .tab {
       .card{
 
@@ -21,8 +28,10 @@
         }
       }
       &--list {
+        margin: 0 17px 0 0;
         &__link {
           width: 278px;
+          font-size: 18px;
         }
         &__liner{
           width: 278px;
@@ -39,15 +48,72 @@
     }
   }
 }
+@media (max-width: 768px) {
+  #main{
+
+    .menu{
+      width: 100%;
+    }
+    .tab{
+      &--list{
+        margin: 0 0 0 139px;
+       &__link{
+         width: 340px;
+       }
+      }
+      .content{
+        display: none;
+      }
+    }
+
+  }
+}
+@media (max-width: 450px) {
+#main{
+  .kep{
+    width: 100%;
+  }
+  .menu{
+    width: 94%;
+    text-align: center;
+    h1{
+      font-size: 20px;
+      width: 286px;
+    }
+    &--title{
+     h4{
+       font-size: 30px;
+       margin: 0 25px;
+     }
+    }
+  }
+  .tab{
+    margin: 0 0 0 -77px;
+    &--list{
+      &__link{
+        font-size: 15px;
+        width: 232px;
+      }
+    }
+    .content{
+      display: none;
+    }
+  }
+}
+}
 @media (max-width: 320px) {
   #main{
     .menu{
+      &--title{
+        margin: 0 -20px;
+      }
     h1{
       font-size: 20px;
       width: 230px;
     }
   }
     .tab{
+      margin: 0 0 0 -136px;
       .content{
         display: none;
       }

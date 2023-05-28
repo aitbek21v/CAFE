@@ -11,6 +11,11 @@ const Main = () => {
 
         if (windowWidth <= 320) {
             window.location.href = '/menu#' + index;
+
+        }else if(windowWidth <= 768){
+            window.location.href = "/menu#" + index
+        }else if(windowWidth <= 450){
+            window.location.href = "/menu#" + index
         }else{
             setActiveTab(index);
         }
