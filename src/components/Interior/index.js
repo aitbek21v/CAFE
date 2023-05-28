@@ -38,8 +38,8 @@ const Interior = () => {
                         <div className="interior--images__top">
                             <img src={cheir2} alt="" className="interior--images__top--1"/>
                             <div className="interior--images__top--two">
-                                <img src={cheir3} alt="" className="interior--imagestop--two1"/>
-                                <img src={cheir4} alt="" className="interior--imagestop--two2"/>
+                                <img src={cheir3} alt="" className="interior--images__top--two__1"/>
+                                <img src={cheir4} alt="" className="interior--images__top--two__2"/>
                             </div>
                         </div>
                         <img src={cheir5} alt="" className="interior--images__img2"/>
@@ -47,8 +47,8 @@ const Interior = () => {
                         <div className="interior--images__top">
                             <img src={cheir2} alt="" className="interior--images__top--1"/>
                             <div className="interior--images__top--two">
-                                <img src={cheir3} alt="" className="interior--imagestop--two1"/>
-                                <img src={cheir4} alt="" className="interior--imagestop--two2"/>
+                                <img src={cheir3} alt="" className="interior--images__top--two__1"/>
+                                <img src={cheir4} alt="" className="interior--images__top--two__2"/>
                             </div>
                         </div>
                         <img src={cheir5} alt="" className="interior--images__img2"/>
