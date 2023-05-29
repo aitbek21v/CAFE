@@ -11,7 +11,6 @@ const About = () => {
                     <div className="about--logo">
                         <div className="about--logo__inner">
                             <img src={img} alt=""/>
-                            <div className="about--logo__inner--lin"></div>
                         </div>
                         <h1>About Us</h1>
                     </div>
@@ -25,7 +24,7 @@ const About = () => {
                             discovery!</p>
                     </div>
                     <div className="about--title">
-                        <img src={img2} alt=""/>
+                        <img className="about--title__image" src={img2} alt=""/>
                         <img src={img3} alt=""/>
                     </div>
                 </div>

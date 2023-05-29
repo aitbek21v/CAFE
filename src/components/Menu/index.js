@@ -788,7 +788,6 @@ const Menu = () => {
             <div className="menu">
                 <div className="search">
                     <div className="search--full">
-                        <Search tabs={tabs}/>
                         <div className="search--full__title">
                             <img src={line} alt="img" />
                             <h1>Menu</h1>

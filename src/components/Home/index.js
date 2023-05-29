@@ -85,7 +85,8 @@ const Home = () => {
                         <a href="tel:+996557010998">
                             <BsFillTelephoneFill/>
                         </a>
-                        <a href="tel:+996557 010 998">0557010998</a>
+                        {/*<a href="tel:+996557 010 998">0557010998</a>*/}
+                        <a style={{color:'white'}} href="tel:+1234567890">+1 (234) 567-890</a>
                     </div>
                     <div className="modal" onClick={() => {
                         setModal(false)

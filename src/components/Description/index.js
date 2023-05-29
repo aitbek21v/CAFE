@@ -7,10 +7,9 @@ import {AiOutlineCloseCircle} from "react-icons/ai";
 const Description = () => {
     return (
         <div id="desc">
-            <div className="container">
                 <div className="desc">
                     <div className="modal">
-                        <Link to={`/menu`}>
+                        <Link to={`/`}>
                             <div className="modal--button cancel-button">
                                 <AiOutlineCloseCircle/>
                             </div>
@@ -26,14 +25,25 @@ const Description = () => {
                                     </div>
                                     <p>$9.11</p>
                                 </div>
-
+                                <button style={{
+                                    background:" #EF272C",
+                                    border: "0.5px solid #181818",
+                                    borderRadius: "2px",
+                                    fontFamily: "Spartan",
+                                    fontSize: "12px",
+                                    fontWeight: "500",
+                                    color: "white",
+                                    width: "100px",
+                                    height: "30px"
+                                }}>Deserts</button>
                             </div>
 
                             <div className="modal__content__actions">
                                 <div>
                                     <div className="modal__content__actions__price">
                                         <div className="modal__content__actions__price__cafe">
-                                            <h1>Desserts</h1>
+                                            <div className="modal__content__actions__price__cafe__line"></div>
+                                            <h1>Extras</h1>
                                             <div className="modal__content__actions__price__cafe__cherry">
                                                 <p>Cherry</p>
                                                 <p>$0.90</p>
@@ -43,9 +53,11 @@ const Description = () => {
                                                 <p>$0.90</p>
                                             </div>
 
+
                                         </div>
                                         <div className="modal__content__actions__price__cafe">
-                                            <h1></h1>
+                                            <div className="modal__content__actions__price__cafe__line"></div>
+                                            <h1>Drinks</h1>
                                             <div className="modal__content__actions__price__cafe__cola">
                                                 <p>Cola Cola</p>
                                                 <p>$0.90</p>
@@ -54,6 +66,7 @@ const Description = () => {
                                                 <p>Cola Cola</p>
                                                 <p>$0.90</p>
                                             </div>
+
                                         </div>
 
                                     </div>
@@ -63,7 +76,6 @@ const Description = () => {
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     );
 };

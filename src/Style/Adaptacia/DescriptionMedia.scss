@@ -8,14 +8,14 @@
         color: #FFFFFF;
         font-weight: bold;
         position: absolute;
-        top: 10px;
-        left: 30px;
+        top: 74px;
+        left: 0;
         cursor: pointer;
 
       }
       &__content {
         padding: 50px 0;
-        width: 110%;
+        width: 100%;
         height: 100%;
         background:#1F2731;
         display: flex;
@@ -23,8 +23,9 @@
         &__column{
           display: flex;
           flex-direction: column;
+          align-items: baseline;
           img{
-            width: 200px;
+            width: 298px;
           }
           &__open{
             display: flex;
@@ -63,7 +64,7 @@
         &__actions{
 
           &__price{
-            padding: 10px 20px;
+            padding: 10px 11px;
             &__cafe{
               width: 262px;
               h1{
@@ -73,9 +74,16 @@
                 color: #ffffff;
                 padding: 10px 0;
               }
+              &__line{
+                width: 100%;
+                height: 1px;
+                background: #737373;
+                margin: 10px 0 ;
+              }
               &__cherry{
                 display: flex;
                 justify-content: space-between;
+
                 p{
                   font-family: 'Spartan';
                   font-style: normal;
@@ -85,9 +93,11 @@
                   padding:  0 0 2px 0;
                 }
               }
+
               &__cola{
                 display: flex;
                 justify-content: space-between;
+
                 p{
                   font-family: 'Spartan';
                   font-style: normal;
