@@ -6,10 +6,10 @@ const Header = () => {
     const toScroll = () => {
         window.scroll(0,1500)
     }
-     const toScroll2 = () => {
+    const toScroll2 = () => {
         window.scroll(0,700)
     }
-     const toScroll3 = () => {
+    const toScroll3 = () => {
         window.scroll(0,700)
     }
 
