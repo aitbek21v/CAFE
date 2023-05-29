@@ -1,3 +1,149 @@
+@media (max-width: 1440px){
+  #menu{
+    .menu--content .ground {
+      width: 79%;
+      height: 360%;
+      background: rgba(255, 255, 255, 0);
+      position: absolute;
+      left: 10%;
+      top: 20%;
+      z-index: 200;
+    }
+    .menu--content .similar {
+      margin: 20px 171px 20px 0;
+
+    }
+    .menu .modal__content {
+      width: 673px;
+      height: 238px;
+      background: #1F2731;
+      display: flex;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #menu{
+    .menu{
+      .modal--button {
+        font-size: 30px;
+        color: #FFFFFF;
+        font-weight: bold;
+        position: absolute;
+        top: 87px;
+        left: 30px;
+        cursor: pointer;
+      }
+      .menu--content .ground {
+        width: 80%;
+        height: 400%;
+        background: rgba(255, 255, 255, 0);
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        z-index: 1000;
+      }
+      .modal__content {
+        width: 620px;
+
+      }
+      .modal__content__actions__price {
+        padding: 10px 10px;
+      }
+      &--list{
+        .active{
+          width: 232px;
+        }
+        &__link {
+          width: 232px;
+          font-size: 16px;
+
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px){
+  #menu{
+    .menu{
+      .modal--button {
+        font-size: 30px;
+        color: #FFFFFF;
+        font-weight: bold;
+        position: absolute;
+        top: 87px;
+        left: 30px;
+        cursor: pointer;
+      }
+      .menu--content .ground {
+        width: 86%;
+        height: 650%;
+        background: rgba(255, 255, 255, 0);
+        position: absolute;
+        left: 10%;
+        top: 0;
+        z-index: 1000;
+      }
+      .modal__content {
+        width: 620px;
+
+      }
+      .modal__content__actions__price {
+        padding: 10px 10px;
+      }
+      &--list{
+        .active{
+          width: 232px;
+        }
+        &__link {
+          width: 232px;
+          font-size: 16px;
+
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px){
+  #menu{
+    .menu{
+      .modal--button {
+        font-size: 30px;
+        color: #FFFFFF;
+        font-weight: bold;
+        position: absolute;
+        top: 87px;
+        left: 30px;
+        cursor: pointer;
+      }
+      .menu--content .ground {
+        width: 86%;
+        height: 650%;
+        background: rgba(255, 255, 255, 0);
+        position: absolute;
+        left: 10%;
+        top: 0;
+        z-index: 1000;
+      }
+      .modal__content {
+        width: 603px;
+
+      }
+      .modal__content__actions__price {
+        padding: 10px 5px;
+      }
+      &--list{
+        .active{
+        width: 232px;
+      }
+        &__link {
+          width: 232px;
+          font-size: 16px;
+
+        }
+      }
+    }
+  }
+}
 @media (max-width: 768px){
   #menu{
     .menu{

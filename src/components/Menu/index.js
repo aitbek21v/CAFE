@@ -40,6 +40,7 @@ import eas5 from '../../img/eas5.jpg';
 import line from "../../img/lineabout.svg"
 import {MdSearch} from "react-icons/md";
 import {AiOutlineCloseCircle} from "react-icons/ai";
+import Search from "../Search";
 
 // const Menu = () => {
 //     const [activeMenu, setActiveMenu] = useState(0);
@@ -782,12 +783,12 @@ const Menu = () => {
         setSelectedCardIndex(null);
     };
 
-
     return (
         <div id="menu">
             <div className="menu">
                 <div className="search">
                     <div className="search--full">
+                        <Search tabs={tabs}/>
                         <div className="search--full__title">
                             <img src={line} alt="img" />
                             <h1>Menu</h1>
