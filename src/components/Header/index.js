@@ -1,5 +1,7 @@
 import {useState} from "react";
 import {Link} from "react-router-dom";
+import {slide as Menu} from 'react-burger-menu'
+// import './Sidebar.css'
 
 const Header = () => {
     const [modal, setModal] = useState(false)
@@ -25,7 +27,7 @@ const Header = () => {
                         <Link onClick={toScroll} to={"/"}>interior</Link>
                         <Link onClick={toScroll2} to={"/"}>About Us</Link>
                         <Link onClick={toScroll3} to={"/"}>Contacts</Link>
-                        <Link onClick={toScroll3} to={"/"}>Menu</Link>
+                        <Link onClick={toScroll3} to={"/menu"}>Menu</Link>
                     </div>
                     <div className=""></div>
                     <div className=""></div>
@@ -38,15 +40,33 @@ const Header = () => {
                             <option>Kg</option>
                         </select>
                     </div>
-                    <div className="header--burger" style={{
-                        zIndex: modal ? "99" : ""
-                    }} onClick={() => {
-                        setModal(!modal)
-                    }}>
-                        <div className="header--burger__menu"></div>
-                        <div className="header--burger__menu"></div>
-                        <div className="header--burger__menu"></div>
-                    </div>
+                    {/*<div className="header--burger" style={{*/}
+                    {/*    zIndex: modal ? "99" : ""*/}
+                    {/*}} onClick={() => {*/}
+                    {/*    setModal(!modal)*/}
+                    {/*}}>*/}
+                    {/*    <div className="header--burger__menu"></div>*/}
+                    {/*    <div className="header--burger__menu"></div>*/}
+                    {/*    <div className="header--burger__menu"></div>*/}
+                        <Menu className="mennu">
+                            <a className="menu-item" href="/">
+                                interior
+                            </a>
+                            <a className="menu-item" href="/">
+                                About Us
+                            </a>
+                            <a className="menu-item" href="/">
+                                Contacts
+                            </a>
+                            <a className="menu-item" href="/menu">
+                                Menu
+                            </a>
+                        </Menu>
+
+                    {/*</div>*/}
+                    <nav className="header--nav">
+
+                    </nav>
                 </div>
             </div>
         </div>

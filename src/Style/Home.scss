@@ -150,6 +150,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding-top: -50px;
 
         a{
           font-weight: 600;
@@ -166,7 +167,12 @@
           width: 56px;
           border: 1px solid #FFFFFF;
           margin: 0 15px;
-
+          p {
+            color: white;
+          }
+        }
+        p {
+          color: white;
         }
       }
     }
@@ -182,7 +188,7 @@
         transform: rotate(-90deg);
       }
       &__local2{
-        width: 1500px;
+        width: 1321px;
         border: 0.2px solid #444343;
         position: absolute;
         bottom: 10px;
