@@ -789,12 +789,12 @@ const Menu = () => {
                 <div className="search">
                     <div className="search--full">
                         <div className="search--full__title">
-                            <img src={line} alt="img" />
+                            <img src={line} alt="img"/>
                             <h1>Menu</h1>
                         </div>
                         <Link to={"/search"}>
                             <button>
-                                <MdSearch />
+                                <MdSearch/>
                             </button>
                         </Link>
 
@@ -823,60 +823,63 @@ const Menu = () => {
                         </li>
                     ))}
                 </ul>
-                <div className="menu--content">
-                    {showModal && (
-                        <div className="modal">
-                            <div className="modal--button cancel-button" onClick={handleCancel}>
-                                <AiOutlineCloseCircle />
-                            </div>
-                            <div className="modal__content">
-                                <div className="modal__content__column">
-                                    {selectedImage && <img src={selectedImage} alt="Selected Image" />}
-                                    {tabs.map((card, index) => (
-                                        <div className="modal__content__column__open" key={index}>
-                                            <div className="modal__content__column__open__name">
-                                                <h1>{card.name}</h1>
-                                                <h4>{card.description}</h4>
-                                            </div>
-                                            <p>{card.price}</p>
-                                        </div>
-                                    ))}
+                <div className="menu--contents">
+                    <div className="menu--content">
+                        {showModal && (
+                            <div className="modal">
+                                <div className="modal--button cancel-button" onClick={handleCancel}>
+                                    <AiOutlineCloseCircle/>
                                 </div>
-                                <div className="modal__content__actions">
-                                    <div className="modal__content__actions__price">
-                                        <div className="modal__content__actions__price__cafe">
-                                            <h1>{tabs[activeMenu].cards[0].h1}</h1>
-                                            <div className="modal__content__actions__price__cafe__cherry">
-                                                <p>{tabs[activeMenu].cards[0].cherry}</p>
-                                                <p>{tabs[activeMenu].cards[0].coin}</p>
+                                <div className="modal__content">
+                                    <div className="modal__content__column">
+                                        {selectedImage && <img src={selectedImage} alt="Selected Image"/>}
+                                        {tabs.map((card, index) => (
+                                            <div className="modal__content__column__open" key={index}>
+                                                <div className="modal__content__column__open__name">
+                                                    <h1>{card.name}</h1>
+                                                    <h4>{card.description}</h4>
+                                                </div>
+                                                <p>{card.price}</p>
                                             </div>
-                                            <div className="modal__content__actions__price__cafe__cherry">
-                                                <p>{tabs[activeMenu].cards[0].cherry}</p>
-                                                <p>{tabs[activeMenu].cards[0].coin}</p>
+                                        ))}
+                                    </div>
+                                    <div className="modal__content__actions">
+                                        <div className="modal__content__actions__price">
+                                            <div className="modal__content__actions__price__cafe">
+                                                <h1>{tabs[activeMenu].cards[0].h1}</h1>
+                                                <div className="modal__content__actions__price__cafe__cherry">
+                                                    <p>{tabs[activeMenu].cards[0].cherry}</p>
+                                                    <p>{tabs[activeMenu].cards[0].coin}</p>
+                                                </div>
+                                                <div className="modal__content__actions__price__cafe__cherry">
+                                                    <p>{tabs[activeMenu].cards[0].cherry}</p>
+                                                    <p>{tabs[activeMenu].cards[0].coin}</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="modal__content__actions__price__cafe">
-                                            <h1>{tabs[activeMenu].cards[0].h2}</h1>
-                                            <div className="modal__content__actions__price__cafe__cola">
-                                                <p>{tabs[activeMenu].cards[0].cola}</p>
-                                                <p>{tabs[activeMenu].cards[0].coin}</p>
-                                            </div>
-                                            <div className="modal__content__actions__price__cafe__cola">
-                                                <p>{tabs[activeMenu].cards[0].cola}</p>
-                                                <p>{tabs[activeMenu].cards[0].coin}</p>
+                                            <div className="modal__content__actions__price__cafe">
+                                                <h1>{tabs[activeMenu].cards[0].h2}</h1>
+                                                <div className="modal__content__actions__price__cafe__cola">
+                                                    <p>{tabs[activeMenu].cards[0].cola}</p>
+                                                    <p>{tabs[activeMenu].cards[0].coin}</p>
+                                                </div>
+                                                <div className="modal__content__actions__price__cafe__cola">
+                                                    <p>{tabs[activeMenu].cards[0].cola}</p>
+                                                    <p>{tabs[activeMenu].cards[0].coin}</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    )}
-                    <div
-                        style={{
-                            display: showModal === true ? 'block' : 'none',
-                        }}
-                        className={showModal === true ? 'ground' : ''}
-                    ></div>
+                        )}
+                        <div
+                            style={{
+                                display: showModal === true ? 'block' : 'none',
+                            }}
+                            className={showModal === true ? 'ground' : ''}
+                        ></div>
+
+                    </div>
                     <h1
                         className="similar"
                         style={{
@@ -885,33 +888,38 @@ const Menu = () => {
                     >
                         Similar gueries
                     </h1>
-                    {tabs[activeMenu].cards.map((card, index) => (
-                        <div className="card" key={index}>
-                            <div className="card">
-                                <div
-                                    className={`some-div ${windowWidth <= 320 ? 'block' : ''}`}
-                                >
-                                    {/* content */}
-                                </div>
-                                <button
-                                    className={`card--click ${
-                                        desert === index ? 'desert' : ''
-                                    }`}
-                                    onClick={() => handleCardClick(index)}
-                                >
-                                    <img src={card.image} alt="" />
-                                </button>
-                                <div className="card--text">
-                                    <div className="card--text__ice">
-                                        <h1>{card.name}</h1>
-                                        <h4>{card.description}</h4>
+
+                    <div className="menu--content2">
+                        {tabs[activeMenu].cards.map((card, index) => (
+                            <div className="card" key={index}>
+                                <div className="card">
+                                    <div
+                                        className={`some-div ${windowWidth <= 320 ? 'block' : ''}`}
+                                    >
+                                        {/* content */}
                                     </div>
-                                    <p>{card.price}</p>
+                                    <button
+                                        className={`card--click ${
+                                            desert === index ? 'desert' : ''
+                                        }`}
+                                        onClick={() => handleCardClick(index)}
+                                    >
+                                        <img src={card.image} alt=""/>
+                                    </button>
+                                    <div className="card--text">
+                                        <div className="card--text__ice">
+                                            <h1>{card.name}</h1>
+                                            <h4>{card.description}</h4>
+                                        </div>
+                                        <p>{card.price}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+
+                    </div>
                 </div>
+
             </div>
         </div>
     );

@@ -62,6 +62,7 @@
         cursor: pointer;
         &::after {
           content: "";
+          margin-bottom: 10px;
           position: absolute;
           bottom: 0;
           left: 50%;
@@ -128,6 +129,7 @@
       position: relative;
       width: 100%;
 
+
       &--text {
         display: flex;
 
@@ -177,6 +179,7 @@
            font-weight: 300;
            font-size: 12px;
            color: #FFFFFF;
+           margin-right: 12px;
             text-decoration-line: underline;
          }
        }
@@ -189,17 +192,17 @@
     align-items: center;
     flex-direction: column;
     &--lin{
-      width: 90.75px;
-      border: 2px solid #EF272C;
+      width: 130px;
+      border: 1px solid #EF272C;
 
-      margin: 10px 0;
+      margin: 7px 0;
     }
     button{
       display: flex;
       align-items: center;
       cursor: pointer;
       background: transparent;
-      padding: 13px 20px;
+      padding: 13px 25px;
       border: 2px solid red;
       font-weight: 600;
       font-size: 12px;

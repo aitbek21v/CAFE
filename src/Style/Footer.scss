@@ -1,9 +1,12 @@
 #footer{
+  .footer--icon {
+margin: 0 ;
+  }
   background: #000000;
   padding: 20px 0 ;
   .footer{
     border-bottom: 1px solid #FFFFFF;
-    width: 1243px;
+    width: 1020px;
     &--foot{
       display: flex;
       align-items: center;

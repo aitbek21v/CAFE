@@ -14,7 +14,7 @@ const Footer = () => {
                             <a href="">Menu</a>
                             <a href="">Contacts</a>
                         </div>
-                        <div>
+                        <div className="footer--icon">
                             <FaTelegramPlane className="footer--foot__icon1"/>
                             <AiFillInstagram className="footer--foot__icon1" />
                         </div>

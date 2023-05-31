@@ -67,6 +67,11 @@
   }
 }
 }
+@media  (max-width: 450px){
+  #best .best--slide img {
+    width: 160px;
+  }
+}
 @media (max-width: 375px){
   #best{
     .best{
