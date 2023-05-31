@@ -104,47 +104,45 @@
   }
 }
 @media (max-width: 992px){
-  #menu{
-    .menu{
-      .modal--button {
-        font-size: 30px;
-        color: #FFFFFF;
-        font-weight: bold;
-        position: absolute;
-        top: 87px;
-        left: 30px;
-        cursor: pointer;
-      }
-      .menu--content .ground {
-        width: 86%;
-        height: 650%;
-        background: rgba(255, 255, 255, 0);
-        position: absolute;
-        left: 10%;
-        top: 0;
-        z-index: 1000;
-      }
-      .modal__content {
-        width: 603px;
-
-      }
-      .modal__content__actions__price {
-        padding: 10px 5px;
-      }
-      &--list{
-        .active{
-        width: 232px;
-      }
-        &__link {
-          width: 232px;
-          font-size: 16px;
-
-        }
-      }
-    }
-  }
-}
-@media (max-width: 768px){
+  //#menu{
+  //  .menu{
+  //    .modal--button {
+  //      font-size: 30px;
+  //      color: #FFFFFF;
+  //      font-weight: bold;
+  //      position: absolute;
+  //      top: 87px;
+  //      left: 30px;
+  //      cursor: pointer;
+  //    }
+  //    .menu--content .ground {
+  //      width: 86%;
+  //      height: 650%;
+  //      background: rgba(255, 255, 255, 0);
+  //      position: absolute;
+  //      left: 10%;
+  //      top: 0;
+  //      z-index: 1000;
+  //    }
+  //    .modal__content {
+  //      width: 603px;
+  //
+  //    }
+  //    .modal__content__actions__price {
+  //      padding: 10px 5px;
+  //    }
+  //    &--list{
+  //      .active{
+  //      width: 232px;
+  //    }
+  //      &__link {
+  //        width: 232px;
+  //        font-size: 16px;
+  //
+  //      }
+  //    }
+  //  }
+  //}
   #menu{
     .menu{
       width: 90%;
@@ -158,9 +156,10 @@
       &--list{
         width: 710px;
         display: flex;
-        margin: 0 0 20px 0 ;
+        margin: 0 0 20px 79px;
+
         li{
-          margin: 0 13px 0 0;
+          margin: 0 16px 0 0;
         }
         &__link{
           width: 100px;
@@ -197,14 +196,97 @@
     }
   }
 }
-@media (max-width: 567px) {
+@media (max-width: 768px){
+  #menu{
+
+    .menu{
+
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .line{
+        display: none;
+      }
+      .menu--contents .similar {
+        margin: 60px 0 30px 213px;
+      }
+      &--content2{
+        margin: 0 0 0 0;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      &--list{
+        width: 710px;
+        display: flex;
+        margin: 0 0 20px 0 ;
+        li{
+          margin: 0 15px 0 0;
+        }
+        &__link{
+          width: 100px;
+          height: 40px;
+          font-size: 12px;
+          background: black;
+          margin: 0 20px 0 0;
+          &::after{
+            height: 0;
+          }
+        }
+        .active{
+          width: 100px;
+
+        }
+      }
+
+      &--content{
+        .modal--button {
+          top: 162px;
+        }
+        .modal {
+          margin: 0 0 0 31px;
+        }
+        .ground{
+          width: 80%;
+          height: 580%;
+          left: 60%;
+        }
+        .card{
+          &--click{
+            img{
+              width: 280px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 566px) {
   #menu{
     .menu{
+      .menu--content2 {
+        margin: 0 0 0 -5px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 13px;
+        .card{
+          width: 256px;
+          &--click{
+            img{
+              width: 256px;
+            }
+          }
+        }
+      }
       &--list{
-        width: 310px;
+        width: 527px;
         display: flex;
         overflow-x: auto;
-        margin: 0 0 10px 0 ;
+        margin: 0 0 10px -5px;
         &::-webkit-scrollbar {
           display: none;
         }
@@ -233,7 +315,7 @@
   #menu{
     .menu{
       &--list{
-        width: 310px;
+        width: 410px;
         display: flex;
         overflow-x: auto;
         margin: 0 0 10px 0 ;

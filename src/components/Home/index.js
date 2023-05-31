@@ -113,6 +113,7 @@ import {ImLocation2} from 'react-icons/im'
 import {MdLocalPhone} from 'react-icons/md'
 import user from "../../img/user.png"
 import tel from "../../img/tel.png"
+import {BsFillTelephoneFill} from "react-icons/bs";
 
 
 const Home = () => {
@@ -208,41 +209,11 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-
-                <div className="home--number">
-                    <div className="home--number__location">
-                        <p>Location</p>
-                        <div className="home--number__location--lin"></div>
-                        <a href="#">
-                            <ImLocation2/>
-                        </a>
-                        <p>Rua da moeda 1g,1200-275,Portugal</p>
-                    </div>
-                    <div className="home--number__location">
-                        <p>Hotline</p>
-                        <div className="home--number__location--lin"></div>
-                        <a href="tel:+996557010998">
-                            <BsFillTelephoneFill/>
-                        </a>
-                        {/*<a href="tel:+996557 010 998">0557010998</a>*/}
-                        <a style={{color:'white'}} href="tel:+1234567890">+1 (234) 567-890</a>
-                    </div>
-                    <div className="modal" onClick={() => {
-                        setModal(false)
-                    }} style={{
-                        display: modal === true ? "block" : "none"
-                    }}></div>
-                </div>
-                <div className="home--absolute">
-                    <div className="home--absolute__local1"></div>
-                    <div className="home--absolute__local2"></div>
-                    <div className="home--absolute__local3"></div>
-                </div>
             </div>
 
 
-            </div>
         </div>
-    );
+
+);
 };
 export default Home;
