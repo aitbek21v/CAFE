@@ -1,25 +1,74 @@
-import {useState} from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
+
+import {CiSearch} from "react-icons/ci";
+
 import {slide as Menu} from 'react-burger-menu'
 // import './Sidebar.css'
 
+
 const Header = () => {
-    const [modal, setModal] = useState(false)
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(prevState => !prevState);
+    };
     const toScroll = () => {
-        window.scroll(0,1500)
+        window.scroll(0, 3200)
     }
     const toScroll2 = () => {
+
+        window.scroll(0, 1100)
+    }
+    const toScroll3 = () => {
+        window.scroll(0, 4000)
+
         window.scroll(0,700)
     }
     const toScroll3 = () => {
         window.scroll(0,700)
+
     }
 
     return (
         <div id="header">
-            <div className="container">
-                <div className="header">
+            <div className={`bur ${isMenuOpen ? 'open' : ''}`}>
+                <div className="bur--nav">
+                    <Link to={"/"}>interior</Link>
+                    <Link to={"/"}>About Us</Link>
+                    <Link  to={"/menu"}>Menu</Link>
+                    <Link to={"/"}>Contacts</Link>
+                </div>
+            </div>
+            <div className="header">
+                <Link to={"/"}>
                     <h1>Restaurant</h1>
+
+                </Link>
+
+                <div className="header--nav">
+                    <Link onClick={toScroll} to={"/"}>interior</Link>
+                    <Link onClick={toScroll2} to={"/"}>About Us</Link>
+                    <Link  to={"/menu"}>Menu</Link>
+                    <Link onClick={toScroll3} to={"/"}>Contacts</Link>
+                </div>
+                <div className="header--search">
+                    <CiSearch className="sericon" />
+                    <input type="text" className="header--search__input" placeholder="Search"/>
+                    <select className="header--search__select">
+                        <option>En</option>
+                        <option>Ru</option>
+                        <option>Kg</option>
+                    </select>
+                </div>
+                <div className={`header--burger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                    <div className={`header--burger__menu1 ${isMenuOpen ? "open" : ""}`}></div>
+                    <div className={`header--burger__menu2 ${isMenuOpen ? "open" : ""}`}></div>
+                    <div className={`header--burger__menu3 ${isMenuOpen ? "open" : ""}`}></div>
+                    <div className={`header--burger__menu4 ${isMenuOpen ? "open" : ""}`}></div>
+
+
+
                     <div className="header--nav" style={{
                         // display: modal ? "flex" : "none",
                         zIndex: modal ? "97" : ""
@@ -67,6 +116,7 @@ const Header = () => {
                     <nav className="header--nav">
 
                     </nav>
+
                 </div>
             </div>
         </div>

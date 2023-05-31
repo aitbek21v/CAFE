@@ -1,8 +1,8 @@
 @media (max-width: 1440px){
   #menu{
     .menu--content .ground {
-      width: 79%;
-      height: 360%;
+      width: 80%;
+      height: 280%;
       background: rgba(255, 255, 255, 0);
       position: absolute;
       left: 10%;
@@ -192,6 +192,70 @@
               width: 280px;
             }
           }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 567px) {
+  #menu{
+    .menu{
+      &--list{
+        width: 310px;
+        display: flex;
+        overflow-x: auto;
+        margin: 0 0 10px 0 ;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        li{
+          margin: 0 10px 0 0;
+        }
+        &__link{
+          width: 100px;
+          height: 40px;
+          font-size: 12px;
+          background: black;
+          margin: 0 20px 0 0;
+          &::after{
+            height: 0;
+          }
+        }
+        .active{
+          width: 100px;
+
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  #menu{
+    .menu{
+      &--list{
+        width: 310px;
+        display: flex;
+        overflow-x: auto;
+        margin: 0 0 10px 0 ;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        li{
+          margin: 0 10px 0 0;
+        }
+        &__link{
+          width: 100px;
+          height: 40px;
+          font-size: 12px;
+          background: black;
+          margin: 0 20px 0 0;
+          &::after{
+            height: 0;
+          }
+        }
+        .active{
+          width: 100px;
+
         }
       }
     }
@@ -407,7 +471,7 @@
           padding: 20px 0;
           background: #1b2026;
           position: relative;
-          margin: 0 0 0 20px;
+          margin: 0 0 0 10px;
           &::after {
             content: "";
             position: absolute;
