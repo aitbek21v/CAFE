@@ -26,6 +26,11 @@ const Header = () => {
                     <Link to={"/"}>About Us</Link>
                     <Link  to={"/menu"}>Menu</Link>
                     <Link to={"/"}>Contacts</Link>
+                    <div className="bur--nav__parg">
+                        <p>EN</p>
+                        <p>RU</p>
+                        <p>KG</p>
+                    </div>
                 </div>
             </div>
             <div className="header">
@@ -38,6 +43,7 @@ const Header = () => {
                     <Link onClick={toScroll2} to={"/"}>About Us</Link>
                     <Link  to={"/menu"}>Menu</Link>
                     <Link onClick={toScroll3} to={"/"}>Contacts</Link>
+
                 </div>
                 <div className="header--search">
                     <CiSearch className="sericon" />
