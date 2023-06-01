@@ -7,7 +7,6 @@ import {ImLocation2} from 'react-icons/im'
 import {MdLocalPhone} from 'react-icons/md'
 import user from "../../img/user.png"
 import tel from "../../img/tel.png"
-import {BsFillTelephoneFill} from "react-icons/bs";
 
 
 const Home = () => {
@@ -104,6 +103,6 @@ const Home = () => {
 
         </div>
 
-);
+    );
 };
 export default Home;

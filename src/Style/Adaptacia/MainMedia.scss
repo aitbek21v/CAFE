@@ -10,9 +10,9 @@
     width: 308px;
   }
   #main {
-.menu{
-  width: 120%;
-}
+    .menu{
+      width: 120%;
+    }
     .tab {
 
       &--list {
@@ -77,9 +77,9 @@
     .tab{
       &--list{
         margin: 0 0 0 139px;
-       &__link{
-         width: 340px;
-       }
+        &__link{
+          width: 340px;
+        }
       }
       .content{
         display: none;
@@ -100,39 +100,39 @@
   #main .tab {
     margin: 5px 0 7px -119px;
   }
-#main{
-  .tab {
-    margin: 10px 20px 0 -125px;
-  }
-  .kep{
-    width: 100%;
-  }
-  .menu{
-    width: 94%;
-    text-align: center;
-    h1{
-      font-size: 20px;
-      width: 286px;
+  #main{
+    .tab {
+      margin: 10px 20px 0 -125px;
     }
-    &--title{
-     h4{
-       font-size: 30px;
-       margin: 0 25px;
-     }
+    .kep{
+      width: 100%;
     }
-  }
-  .tab{
-    &--list{
-      &__link{
-        font-size: 15px;
-        width: 232px;
+    .menu{
+      width: 94%;
+      text-align: center;
+      h1{
+        font-size: 20px;
+        width: 286px;
+      }
+      &--title{
+        h4{
+          font-size: 30px;
+          margin: 0 25px;
+        }
       }
     }
-    .content{
-      display: none;
+    .tab{
+      &--list{
+        &__link{
+          font-size: 15px;
+          width: 232px;
+        }
+      }
+      .content{
+        display: none;
+      }
     }
   }
-}
 }
 @media (max-width: 320px) {
   #main{
@@ -140,11 +140,11 @@
       &--title{
         margin: 0 -20px;
       }
-    h1{
-      font-size: 20px;
-      width: 230px;
+      h1{
+        font-size: 20px;
+        width: 230px;
+      }
     }
-  }
     .tab{
       margin: 0 0 0 -136px;
       .content{
